@@ -1,0 +1,12 @@
+body{
+	max-width:100%;
+}
+@media all and (max-width:320px){
+	body{
+		max-width:100%;
+		width:auto;
+		background:white;
+		font-size:15px;
+		font-family:roboto,arial;
+	}
+}
