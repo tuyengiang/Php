@@ -1,0 +1,172 @@
+*{
+	margin:0; padding:0;
+	font-family:roboto,arial;
+}
+
+body{
+	background:#ddd;
+}
+a{
+	text-decoration:none;
+}
+h3{
+	float:left;
+}
+h1{
+	margin:10px 10px;
+}
+h4{
+	margin:10px 10px;
+}
+/**header**/
+#header{
+	width:100%;
+	height:80px;
+	background:#dc143c;
+	box-shadow:2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+#header-btn{
+	width:95%;
+	height:80px;
+	margin:auto;
+}
+#header-logo{
+	float:left;
+	width:20%;
+	height:80px;
+	color:white;
+	line-height:80px;
+	font-size:30px;
+}
+#search{
+	width:48.7%;
+	height:40px;
+	float:left;
+	margin-top:8px;
+	margin-left:76px;
+}
+/**main**/
+#main{
+	width:95%;
+	height:auto;
+	margin:auto;
+	margin-top:20px;
+	
+}
+#main-left{
+	width:25%;
+	height:400px;
+	background:white;
+	float:left;
+	margin-right:5px;
+	box-shadow:2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+#main-center{
+	width:48.7%;
+	height:400px;
+	background:white;
+	float:left;
+	margin-right:5px;
+	box-shadow:2px 2px 5px 1px rgba(0,0,0,0.2);
+
+
+}
+#main-right{
+	width:25%;
+	height:860px;
+	background:white;
+	float:left;
+	box-shadow:2px 2px 5px 1px rgba(0,0,0,0.2);
+
+}
+/**tap**/
+#tap{
+	width:100%;
+	margin-top:5px;
+	height:40px;
+}
+#tap li{
+	display:inline-block;
+	width:31%;
+	margin-left:2px;
+	border:1px solid lightgray;
+	background:lightgray;
+}
+#tap li a{
+	color:green;
+	display:block;
+	text-align:center;
+	line-height:40px;
+	font-weight:bold;
+	transition:0.5s ease all;
+}
+#tap li a:hover{
+	transition:0.5s ease all;
+	background:gray;
+	color:white;
+}
+#list{
+	width:100%;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	color:white;
+	font-size:15px;
+	font-weight:bold;
+	background:#dc143c;
+}
+/**main-right**/
+.right-content{
+	width:97%;
+	margin:5px 5px;
+	height:250px;
+	border:1px solid #ddd;
+}
+.right-content-title{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
+.right-content-title:hover{
+	background:lightgray;
+}
+.right-content-title a{
+	color:green;
+}
+.right-content-img{
+	width:100%;
+	height:195px;
+}
+.right-content-img img{
+	width:100%;
+	height:195px;
+}
+
+
+
+/**The**/
+input{
+	width:77%;
+	margin-top:20px;
+	height:30px;
+	border:1px solid #ddd;
+	border-radius:0.5em;
+}
+button{
+	width:20%;
+	height:30px;
+	background:lightgray;
+	border:none;
+	color:green;
+	font-weight:bold;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.2);
+	border-radius:0.5em;
+	cursor:pointer;
+	transition:1s ease all;
+}
+button:hover{
+	transition:1s ease all;
+	background:green;
+	color:white;
+}
