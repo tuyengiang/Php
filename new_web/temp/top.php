@@ -1,3 +1,18 @@
+<div id="top">
+	<div id="top-slider">
+		<ul>
+			<li><a href="#"><img src="img/1.jpg"></a>
+			</li>
+			<li><a href="#"><img src="img/2.jpg"></a></li>
+			<li><a href="#"><img src="img/3.jpg"></a></li>
+			<li><a href="#"><img src="img/giang.jpg"></a></li>
+			<li><a href="#"><img src="img/hot.jpg"></a></li>
+			<li><a href="#"><img src="img/video.jpg"></a></li>
+
+		</ul>	
+	</div>
+</div><!--top-->
+
 <div id="search">
 		<div id="list">
 			<div id="list-title">Tìm Kiếm</div><!--list-title-->
@@ -5,39 +20,6 @@
 		<form method="post" action="search">
 			<input type="search" name="search" placeholder="Tìm Kiếm">
 		</form>
-	</div><!--search-->
+</div><!--search-->
 
-
-<div id="top">
-		<div id="list">
-			<div id="list-title">Bài Viết Hot</div><!--list-title-->
-		</div><!--list-->
-		<div class="top-hot">
-			<div class="top-hot-img">
-				<a href="#"><img src="img/hot.jpg"></a>
-			</div><!--top-hot-->
-			<div class="top-hot-title">
-					<a href="#"><p>Bài Viết 1</p></a>
-			</div><!--top-hot-title-->
-		</div><!--top-hot-->
-		<div class="top">
-			<div class="top-img">
-				<a href="#"><img src="img/hot.jpg"></a>
-			</div><!--top-hot-->
-			<div class="top-title">
-					<a href="#"><p>Bài Viết 1</p></a>
-
-			</div><!--top-hot-title-->
-		</div>
-		<div class="top">
-			<div class="top-img">
-				<a href="#"><img src="img/hot.jpg"></a>
-			</div><!--top-hot-->
-			<div class="top-title">
-					<a href="#"><p>Bài Viết 1</p></a>
-					
-
-			</div><!--top-hot-title-->
-		</div><!--top-->
-	</div><!--top-->
-	<div style="clear:left;"></div>
+<div style="clear:left;"></div>

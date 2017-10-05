@@ -35,11 +35,11 @@
 		<div id="page">
 				<ul>
 					<li><a href="#">&laquo; </a></li>
-					<?php if($totalpage > 0) : ?>
-		                <?php for($i=0;$i<$totalpage;$i++): ?>
-		                   <li><a class="<?php echo ($i+1) == $page ? "active" : "" ;?>" 
-		                   href="index.php?page=<?php echo ($i+1); ?>"><?php echo $i+1;?></a>
-		                <?php endfor; ?>
+			<?php if($totalpage > 0) : ?>
+		               	 <?php for($i=0;$i<$totalpage;$i++): ?>
+			                   <li><a class="<?php echo ($i+1) == $page ? "active" : "" ;?>" 
+			                   href="index.php?page=<?php echo ($i+1); ?>"><?php echo $i+1;?></a>
+		               	 <?php endfor; ?>
 		              <?php endif; ?>	
 		              <li><a href="#">&raquo; </a></li>
 		        </ul>

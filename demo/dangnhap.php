@@ -24,9 +24,9 @@
 						echo "<h4> &hearts; Username & Password Không Đúng &hearts;</h4>";
 					}else{
 						$_SESSION["user"]=$user;
-						header('location:thanhvien.php');
+						header("location:thanhvien.php");
 					}
-					if($user=="admin" && $pass=="24101997"){
+					if($user=="admin" && $pass=="123456a@"){
 						$_SESSION["user"]=$user;
 						header('location:admin.php');
 					}
@@ -35,7 +35,7 @@
 
 		?>
 
-		<center><form method="post">
+		<center><form method="post" action="">
 			<input type="text" name="user" placeholder="Nhập Username" required=""/>
 			<input type="password" name="password" placeholder="Nhập Password" required="" /><br>
 			<button type="submit" name="ok">Đăng Nhập</button>

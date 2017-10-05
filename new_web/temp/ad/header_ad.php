@@ -5,6 +5,8 @@
 	<title>Web-design - Admin</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="css/main1.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/slide.js"></script>
 </head>
 <body>
 	<div id="header">

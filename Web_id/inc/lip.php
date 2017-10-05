@@ -1,7 +1,7 @@
 <?php 
 session_start();
 // Chứa các cấu hình + functions hay dùng 
-	$conn = mysqli_connect( "localhost" , "root" , "" , "uneti_stupid_cms" ); // dia chi truy cap / user name / password / ten db 
+	$conn = mysqli_connect( "localhost" , "root" , "root" , "Tin9a5" ); // dia chi truy cap / user name / password / ten db 
 	if( $conn ){
 		mysqli_set_charset($conn ,  "utf8");
 	}else{
