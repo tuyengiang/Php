@@ -1,3 +1,29 @@
+<?php require_once("inc/ketnoi.php"); ?>
+<?php 
+	if($_SERVER["REQUEST_METHOD"]=="POST"){
+		$user=$_POST["username"];
+		$password=md5($_POST["password"]);
+
+		if($user==null || $password==null){
+			echo "<script language='javascript'>";
+			echo "alert('Bạn chưa nhập tên đăng nhập !!!');";
+			echo "</script>";
+		}else{
+			$sql="SELECT username,password FROM taikhoan WHERE username='{$user}' AND password='{$password}'";
+			$query=mysqli_query($conn,$sql);
+			$row=mysqli_fetch_array($query,MYSQLI_ASSOC);
+			if($row==0){
+				echo "<script language='javascript'>";
+				echo "alert('Tài khoản hoặc mật khẩu không đúng !!!');";
+				echo "</script>";
+			}else{
+				$_SESSION["user"]=$user;
+				header("location:admin/wp-admin.php");
+			}
+		}
+	}
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +59,17 @@
 			</form>
 		</div><!--header-search-->
 	</div><!--header-->
-
+	
+	<div id="menu">
+		<div class="menu-nav">
+			<ul>
+				<li><a href="index.php"><i class="fa fa-home"></i></a></li>
+				<li><a href="#">Lập trình</a></li>
+				<li><a href="#">Tài liệu</a></li>
+				<li><a href="#">Tin tức</a></li>
+			</ul>
+		</div><!--menu-nav-->
+	</div><!--menu-->
 	<div id="slider">
 		<div id="blog-slider">
 			<div class="slider-content">
@@ -87,16 +123,7 @@
 		</div><!--blog-slider-->
 	</div><!--slider-->
 
-	<div id="menu">
-		<div class="menu-nav">
-			<ul>
-				<li><a href="index.php"><i class="fa fa-home"></i></a></li>
-				<li><a href="#">Lập trình</a></li>
-				<li><a href="#">Tài liệu</a></li>
-				<li><a href="#">Tin tức</a></li>
-			</ul>
-		</div><!--menu-nav-->
-	</div><!--menu-->
+	
 	<div style="clear:left"></div>
 
 	<div id="blog-main">
@@ -113,6 +140,7 @@
 			</div><!--left-category-->
 
 			<div class="left-category">
+			
 				<div class="list-title">
 					<i class="fa fa-user"></i> Đăng nhập
 				</div><!--list-title-->
