@@ -1,3 +1,24 @@
+<?php  
+	require_once('inc/ketnoi.php');
+	if(isset($_POST['dang-nhap'])){
+		$username=$_POST["user"];
+		$password=$_POST["password"];
+		if($username=="" || $password==""){
+			echo "<script>alert('Mời bạn nhập đầy đủ thông tin'); </script>";
+		}else{
+			$sql="SELECT user,password FROM dangnhap WHERE user='{$username}' AND password='{$password}'";
+			$query=mysqli_query($conn,$sql);
+			$row=mysqli_fetch_array($query,MYSQLI_ASSOC);
+			if($row==0){
+				echo "<script>alert('Tài khoản hoặc mật khẩu không đúng'); </script>";
+			}else{
+				$_SESSION["user"]=$user;
+				header('location:admin/wp-admin.php');
+			}
+		}
+	}
+	
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +56,7 @@
 				<label><h4><i class="fa fa-code"></i> Password</h4>
 					<input type="password" name="password" placeholder="Nhập Password">
 				</label><br>
-				<Center><button type="submit" id="btn2">Đăng Nhập</button></Center>
+				<Center><button type="submit" id="btn2" name="dang-nhap">Đăng Nhập</button></Center>
 
 			</form>
 		</div><!--main-login-->

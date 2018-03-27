@@ -1,3 +1,11 @@
+<?php 
+	require_once("inc/ketnoi.php");
+	if(isset($_POST["dang-ky"])){
+
+	}
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,7 +79,7 @@
 
 						</label><br>
 						
-				<Center><button type="submit" id="btn2">Đăng Nhập</button></Center>
+				<Center><button type="submit" id="btn2" name="dang-ky">Đăng Nhập</button></Center>
 
 			</form>
 	</div><!--index-main-->
